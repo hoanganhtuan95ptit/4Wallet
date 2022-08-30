@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">4Wallet</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="loading">Loading</string>
+
+    <string name="message_load_ads">Thanks for your support. Ads keep us motivated to sustain and grow the project.</string>
+
+    <string name="title_error">Error</string>
+    <string name="title_update_app">Update APP</string>
+    <string name="title_loading_ads">Loading ads</string>
+    <string name="title_migration_app">Migration APP</string>
+
+    <string name="action_back">Back</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_close">close</string>
+    <string name="action_update">Update</string>
+    <string name="action_migration">Convert</string>
+
+    <string name="message_error">Error, please try again later</string>
+    <string name="message_error_network">No internet connection, please check again</string>
+    <string name="message_update_app">"The old version is used, please update app to have the best experience"</string>
+    <string name="message_migration_app">The current app is no longer updated and supported. Please switch to the new version, for the best support!!</string>
+
+    <string name="wallet_name_default">Uni</string>
+
+    <string name="multi_chain">Multi chain</string>
+    <string name="multi_wallet">Multi</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+
+    <string name="title_choose_chain">Choose chain</string>
+    <string name="title_choose_wallet">Choose wallet</string>
+
+    <string name="swap">Swap</string>
+    <string name="transfer">Transfer</string>
+    <string name="multi_send">Multi send</string>
+    <string name="bridge">Bridge</string>
+
+    <string name="assets_token">Assets</string>
+    <string name="assets_nft">Nft</string>
+
+    <string name="total_balance">Total balance</string>
+    <string name="total_change">Total change</string>
+    <string name="d_app">DApp</string>
+    <string name="buy_crypto">Buy crypto</string>
+    <string name="history">History</string>
+    <string name="receive">Receive</string>
+
+</resources>

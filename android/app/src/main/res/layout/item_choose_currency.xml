@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/iv_wallet"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/coin_default" />
+
+    <TextView
+        android:id="@+id/tv_wallet_name"
+        style="?attr/textBody1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding"
+        android:layout_marginEnd="@dimen/padding"
+        android:singleLine="true"
+        android:textColor="?attr/colorOnSurface"
+        app:layout_constraintBottom_toBottomOf="@id/iv_wallet"
+        app:layout_constraintEnd_toStartOf="@id/iv_selection"
+        app:layout_constraintStart_toEndOf="@+id/iv_wallet"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Steve" />
+
+    <ImageView
+        android:id="@+id/iv_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_selection_primary_24dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_wallet_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_wallet_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

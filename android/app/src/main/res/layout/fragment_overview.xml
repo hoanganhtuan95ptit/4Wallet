@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Wallet">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/frame_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="56dp"
+                android:minHeight="100dp">
+
+                <View
+                    android:id="@+id/v_background_header"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/bg_round_12_surface"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_total_change"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv_total_balance_title" />
+
+                <ImageView
+                    android:id="@+id/iv_currency"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:rotation="30"
+                    app:layout_constraintEnd_toEndOf="@id/v_background_header"
+                    app:layout_constraintTop_toTopOf="@id/v_background_header"
+                    tools:src="@drawable/img_dola_background" />
+
+                <TextView
+                    android:id="@+id/tv_total_balance_title"
+                    style="?attr/textCaption"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:maxLines="1"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="@string/total_balance"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    app:layout_constraintEnd_toStartOf="@id/frame_currency"
+                    app:layout_constraintStart_toStartOf="@id/v_background_header"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_total_balance"
+                    style="?attr/textHeadline4"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="-16dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:paddingBottom="16dp"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/frame_currency"
+                    app:layout_constraintStart_toStartOf="@id/v_background_header"
+                    app:layout_constraintTop_toBottomOf="@id/tv_total_balance_title"
+                    tools:text="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/tv_total_change_title"
+                    style="?attr/textCaption"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="20dp"
+                    android:maxLines="1"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/total_change"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    app:layout_constraintEnd_toEndOf="@id/tv_total_balance"
+                    app:layout_constraintStart_toStartOf="@id/v_background_header"
+                    app:layout_constraintTop_toBottomOf="@id/tv_total_balance" />
+
+                <TextView
+                    android:id="@+id/tv_total_change"
+                    style="?attr/textBody1"
+                    android:layout_width="0dp"
+                    android:maxLines="1"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="+20%"
+                    android:textColor="@color/color_state_price_change_24h"
+                    app:layout_constraintEnd_toEndOf="@id/tv_total_balance"
+                    app:layout_constraintStart_toStartOf="@id/v_background_header"
+                    app:layout_constraintTop_toBottomOf="@id/tv_total_change_title" />
+
+                <include
+                    android:id="@+id/frame_currency"
+                    layout="@layout/layout_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_total_balance_title"
+                    app:layout_constraintEnd_toEndOf="@id/v_background_header"
+                    app:layout_constraintTop_toTopOf="@id/v_background_header" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:clipToPadding="false"
+                    android:overScrollMode="never"
+                    app:layout_constraintTop_toBottomOf="@id/tv_total_change" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:clipToPadding="false"
+                    app:layout_constraintTop_toBottomOf="@id/rec_action"
+                    app:tabGravity="start"
+                    app:tabIndicator="@drawable/tab_indicator"
+                    app:tabIndicatorColor="?attr/colorAccent"
+                    app:tabIndicatorFullWidth="false"
+                    app:tabMode="scrollable"
+                    app:tabPaddingEnd="16dp"
+                    app:tabPaddingStart="16dp"
+                    app:tabSelectedTextColor="?attr/colorOnBackground"
+                    app:tabTextAppearance="@style/MyCustomTextAppearance"
+                    app:tabTextColor="?attr/colorOnBackgroundVariant" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="?attr/colorPrimary"
+                app:layout_collapseMode="pin">
+
+                <include
+                    android:id="@+id/frame_wallet"
+                    layout="@layout/layout_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <include
+                    android:id="@+id/frame_chain"
+                    layout="@layout/layout_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/frame_wallet"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    style="?attr/buttonNormal"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/bg_oval_on_primary"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_search_on_primary_24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/frame_wallet"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

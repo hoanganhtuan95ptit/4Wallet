@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.tuanha.wallet.ui.view.NavigationBackgroundView
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            app:layout_constraintBottom_toTopOf="@id/v_navigation_bar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/v_navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="?attr/colorNavigationBar"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:constraint_referenced_ids="iv_home, iv_market, iv_scan, iv_nothing, iv_setting"
+            app:flow_horizontalAlign="center"
+            app:flow_horizontalGap="30dp"
+            app:flow_horizontalStyle="packed"
+            app:flow_wrapMode="none"
+            app:layout_constraintBottom_toBottomOf="@id/test"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/test" />
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_home_state_navigation_24dp" />
+
+        <ImageView
+            android:id="@+id/iv_market"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_market_state_navigation_24dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_round_12_accent"
+            android:padding="8dp"
+            android:src="@drawable/ic_scan_state_navigation_24dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/iv_nothing"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_dapp_state_navigation_24dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_setting_state_navigation_24dp"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
