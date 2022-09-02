@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.play:review:2.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/879fae1425e053e9b21e1e4f069d556d/transformed/review-2.0.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/879fae1425e053e9b21e1e4f069d556d/transformed/review-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/879fae1425e053e9b21e1e4f069d556d/transformed/review-2.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/879fae1425e053e9b21e1e4f069d556d/transformed/review-2.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

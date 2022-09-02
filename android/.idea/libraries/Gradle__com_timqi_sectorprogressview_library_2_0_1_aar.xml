@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.timqi.sectorprogressview:library:2.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f43f2902187b92686046813886f26b42/transformed/library-2.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f43f2902187b92686046813886f26b42/transformed/library-2.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f43f2902187b92686046813886f26b42/transformed/library-2.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.timqi.sectorprogressview/library/2.0.1/8e8368e311c673dd3b16715c2eb0836b08accb8/library-2.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.timqi.sectorprogressview/library/2.0.1/b2d58926e407466d7d1b7f0b848bd51c375f1f73/library-2.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

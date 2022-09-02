@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android.iml" filepath="$PROJECT_DIR$/.idea/modules/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/4Wallet.iml" filepath="$PROJECT_DIR$/.idea/modules/4Wallet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/4Wallet.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/4Wallet.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/4Wallet.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/4Wallet.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/4Wallet.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/4Wallet.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/4Wallet.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/4Wallet.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1832775812/Core.4Wallet.core.iml" filepath="$PROJECT_DIR$/.idea/modules/-1832775812/Core.4Wallet.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1832775812/Core.4Wallet.core.main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/-1832775812/Core.4Wallet.core.main~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1832775812/Core.4Wallet.core.test~1.iml" filepath="$PROJECT_DIR$/.idea/modules/-1832775812/Core.4Wallet.core.test~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-794848205/CoreApp.4Wallet.core-app.iml" filepath="$PROJECT_DIR$/.idea/modules/-794848205/CoreApp.4Wallet.core-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-794848205/CoreApp.4Wallet.core-app.androidTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/-794848205/CoreApp.4Wallet.core-app.androidTest~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-794848205/CoreApp.4Wallet.core-app.main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/-794848205/CoreApp.4Wallet.core-app.main~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-794848205/CoreApp.4Wallet.core-app.unitTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/-794848205/CoreApp.4Wallet.core-app.unitTest~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1175451524/Detect.4Wallet.detect.iml" filepath="$PROJECT_DIR$/.idea/modules/-1175451524/Detect.4Wallet.detect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1175451524/Detect.4Wallet.detect.androidTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/-1175451524/Detect.4Wallet.detect.androidTest~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1175451524/Detect.4Wallet.detect.main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/-1175451524/Detect.4Wallet.detect.main~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1175451524/Detect.4Wallet.detect.unitTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/-1175451524/Detect.4Wallet.detect.unitTest~1.iml" />
     </modules>
   </component>
 </project>

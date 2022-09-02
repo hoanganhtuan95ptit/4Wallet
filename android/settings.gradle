@@ -3,10 +3,10 @@ rootProject.name = "4Wallet"
 include ':app'
 
 include ':core'
-project(':core').projectDir = file('../Core/core')
+project(':core').projectDir = file('../../Core/core')
 
 include ':core-app'
-project(':core-app').projectDir = file('../CoreApp/core-app')
+project(':core-app').projectDir = file('../../CoreApp/core-app')
 
 include ':detect'
-project(':detect').projectDir = file('../Detect/detect')
+project(':detect').projectDir = file('../../Detect/detect')

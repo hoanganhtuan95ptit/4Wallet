@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="4Wallet.app" target="11" />
+      <module name="CoreApp.4Wallet.core-app" target="11" />
+      <module name="Detect.4Wallet.detect" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

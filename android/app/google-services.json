@@ -1,20 +1,20 @@
 {
   "project_info": {
-    "project_number": "617542477601",
-    "project_id": "language-472a8",
-    "storage_bucket": "language-472a8.appspot.com"
+    "project_number": "617542477602",
+    "project_id": "language-472a9",
+    "storage_bucket": "language-472a9.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:617542477601:android:8cf219bedf80e22092c060",
+        "mobilesdk_app_id": "1:617542477601:android:8cf219bedf80e22092c061",
         "android_client_info": {
           "package_name": "com.tuanha.wallet"
         }
       },
       "oauth_client": [
         {
-          "client_id": "617542477601-l5egedh925p2vagslt1r3b3gm321mtth.apps.googleusercontent.com",
+          "client_id": "617542477602-l5egedh925p2vagslt1r3b3gm321mtth.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.tuanha.wallet",
@@ -22,20 +22,20 @@
           }
         },
         {
-          "client_id": "617542477601-lamgg5edvj442m7slop8nabvnvpshd5m.apps.googleusercontent.com",
+          "client_id": "617542477602-lamgg5edvj442m7slop8nabvnvpshd5m.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAuCXCf3ngg1rjxydHuToF85K32gyB4vgY"
+          "current_key": "AIzaSyAuCXCf3ngg1rjxydHuToF85K32gyB4vgA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "617542477601-lamgg5edvj442m7slop8nabvnvpshd5m.apps.googleusercontent.com",
+              "client_id": "617542477602-lamgg5edvj442m7slop8nabvnvpshd5m.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
